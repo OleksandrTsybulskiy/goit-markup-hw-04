@@ -65,7 +65,7 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -90,6 +90,7 @@ body {
 .header {
   background-color: var(--color-white);
   border-bottom: 1px solid var(--color-cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* Logo */
@@ -177,6 +178,11 @@ body {
   background-color: var(--color-navy-blue);
   padding: 188px 0;
   display: flex;
+  min-width: 1440px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/images-hero/heroimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .order-button {
@@ -244,6 +250,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
   margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.icons-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-cloud);
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
 }
 
 .serv-list-item {
@@ -311,6 +328,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-slate);
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .list-team {
@@ -321,11 +339,81 @@ body {
 .team-frame {
   background-color: var(--color-white);
   flex-basis: calc((100% - 3 * 24px) / 4);
-  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .emp-info {
   padding: 32px 16px;
+}
+
+/* Customers */
+
+.cust-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-navy-blue);
+  margin-bottom: 72px;
+  padding-top: 120px;
+}
+
+.cust-link {
+  border: 1px solid var(--color-light-slate);
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light-slate);
+}
+
+.cust-logo {
+  fill: currentColor;
+}
+
+.cust-link:hover,
+.cust-link:focus {
+  border: 1px solid var(--color-ocean);
+  color: var(--color-ocean);
+}
+
+.cust-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+/* Socials */
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.socials-link {
+  background-color: var(--color-iris);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--color-ocean);
 }
 
 /* Footer */
@@ -351,6 +439,54 @@ body {
   display: inline-block;
   margin-bottom: 16px;
   margin-right: 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-container-info {
+  display: inline-block;
+}
+
+.footer-socials-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-soc-link {
+  background-color: var(--color-iris);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--color-green);
+}
+
+.soc-media {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  margin-bottom: 16px;
 }
 
 /* Portfolio page */
@@ -381,18 +517,13 @@ body {
   border-radius: 4px;
 }
 
-.filter-button:hover {
-  background: var(--color-ocean);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--color-white);
-  border: 1px solid transparent;
-}
-
+.filter-button:hover,
 .filter-button:focus {
   background: var(--color-ocean);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--color-white);
   border: 1px solid transparent;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Examples portfolio */
@@ -406,6 +537,11 @@ body {
 
 .ex-list-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.ex-list-item:hover,
+.ex-list-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .ex-item {
@@ -430,4 +566,3 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
-
