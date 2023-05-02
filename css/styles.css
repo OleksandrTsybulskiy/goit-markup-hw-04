@@ -458,17 +458,15 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
+  gap: 120px;
 }
 
 .footer-container-info {
   display: inline-block;
-  margin-right: 120px;
 }
 
 .footer-socials-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .footer-soc-list {
