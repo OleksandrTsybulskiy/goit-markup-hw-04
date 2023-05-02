@@ -184,6 +184,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
 }
 
 .order-button {
@@ -459,14 +460,6 @@ body {
   display: flex;
   align-items: baseline;
   gap: 120px;
-}
-
-.footer-container-info {
-  display: inline-block;
-}
-
-.footer-socials-links {
-  
 }
 
 .footer-soc-list {
